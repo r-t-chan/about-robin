@@ -1,11 +1,11 @@
 def connectDatabaseUserSpec():
     import psycopg2
-    strUser = input("\nPlease enter the Username required to connect into the lab5 database:\n") #authenticate user
+    strUser = input("\nPlease enter the Username required to connect into the database:\n") #authenticate user
     strPassword = input("\nPassword:\n")
     strDatabase = input("\nPlease enter the database you would like to connect to:\n")
     strHost = input("\nPlease enter the host address you would like to connect to:\n")
     strPort = input("\nPlease enter the port number you would like to connect to:\n")
-    conn = psycopg2.connect(user=strUser, password=strPassword, database=strDatabase, host=strHost, port=strPort)
+    conn = psycopg2.connect(user=strUser, password=strPassword, database=strDatabase, host=strHost, port=strPort) #connect with user inputted information
     print("\n###Successfully connected!!###\n")
     
     cursor = conn.cursor()
